@@ -38,7 +38,13 @@ function App() {
                 TEREGRAM
               </a>
             </FlexBox>
-            <Btn>SHIBPEDIA</Btn>
+            <Btn
+              onClick={() => {
+                window.open("https://docs.shibatoken.com/");
+              }}
+            >
+              SHIBPEDIA
+            </Btn>
           </FlexBox>
         </Header>
       </header>
