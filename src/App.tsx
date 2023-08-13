@@ -43,8 +43,8 @@ function App() {
               <a href="https://twitter.com/BabyShibarium" target="_black">
                 TWITTER
               </a>
-              <a href="https://t.me/BabyShib_Shibarium" target="_black">
-                TEREGRAM
+              <a href="https://t.me/BabyShib_Shibarium1" target="_black">
+                TELEGRAM
               </a>
             </FlexBox>
             <Btn
