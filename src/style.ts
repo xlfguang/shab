@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import img6 from "./assets/6-ai.png";
-
+interface BackgroundBox {
+  imgSrc: string;
+}
 interface FlexBoxProps {
   direction?: string;
   justify?: string;
@@ -107,4 +109,77 @@ export const FooterLogo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: baseline;
+`;
+export const BackgroundBox = styled.div<BackgroundBox>`
+  width: 100vw;
+  height: 100vh;
+  background: url(${(props) => props.imgSrc}) no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+export const CardBox = styled.div`
+  /* 给我写一个带边框阴影的卡片 */
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 60px;
+  box-shadow: 0px 0px 60px rgb(230 164 25);
+  overflow: hidden;
+`;
+
+export const DogBox = styled.div`
+  width: 100%;
+  margin: auto;
+  display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .dog {
+    width: 65%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .dog-text {
+    padding: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+`;
+
+export const Bc5box = styled.div`
+  width: 100%;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+`;
+export const BackgroundBox5 = styled.div`
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .logobox {
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+`;
+export const CardBox5 = styled(CardBox)`
+  width: "40%";
 `;
